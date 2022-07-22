@@ -1,0 +1,31 @@
+.preLoad {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--Mod);
+  flex-direction: column;
+}
+.preLoad img {
+  width: 40%;
+}
+body {
+  color: var(--Mod);
+  background-color: #222;
+  min-height: 10000px;
+}
+.preLoad .texts {
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  height: 25px;
+  font-weight: 700;
+}
+.preLoad .texts p {
+  margin: 0;
+}

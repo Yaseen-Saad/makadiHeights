@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <!-- Home Style -->
     <link rel="stylesheet" href="css/homeStyle.css">
+    <!-- Pre Load Style -->
+    <link rel="stylesheet" href="css/preLoadStyle.css">
 </head>
 
 <body>
@@ -38,19 +40,85 @@
     <div class="preLoad">
         <img src="images/makadi-heights-colored-logo.png" alt="">
         <div class="texts">
-            <p>sample Text 1</p>
-            <p>sample Text 2</p>
-            <p>sample Text 3</p>
-            <p>sample Text 4</p>
-            <p>sample Text 5</p>
-            <p>sample Text 6</p>
+            <p>a place to shine</p>
+            <p>always in season</p>
+            <p>we call it famillay</p>
         </div>
     </div>
     <nav>
-        <div class="timestatus">
+        <img src="images/logoBig.png" alt="">
+        <div class="l-nav">
+            <div class="timestatus">
+                <img src="" alt="weather">
+            </div>
+            <div class="temp">32</div>
+            <span id="search"><i class="fa-solid fa-search"></i></span>
+            <div class="buy-now">
+                <p>Buy Now</p>
+                <p>Buy Now</p>
+            </div>
+            <div class="toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </div>
-        <div class="temp">32</div>
     </nav>
+    <section class="search-nav d-flex justify-content-center align-items-center">
+        <div class="custom d-flex justify-content-evenly align-items-center">
+            <p>FIND YOUR HOME
+            </p>
+            <div class="Location d-flex">
+                <div class="defult">
+                    <p>choose a Location</p>
+                    <div id="qwwq">
+                        <span>|</span>
+                        <span>‹</span>
+                    </div>
+                </div>
+                <div class="options-sect position-absolute">
+                    <div class="options" value="all">All locations</div>
+                    <div class="options" value="ria">ria</div>
+                </div>
+            </div>
+            <div class="type">
+                <div class="defult">
+                    <p>choose a zone</p>
+                    <div id="qwwq">
+                        <span>|</span>
+                        <span>‹</span>
+                    </div>
+                </div>
+                <div class="options-sect position-absolute">
+                    <div class="options" value="type">Junior Villa</div>
+                    <div class="options" value="type">Familly Villa</div>
+                    <div class="options" value="type">All Types</div>
+                    <div class="options" value="type">All Types</div>
+                    <div class="options" value="type">All Types</div>
+                    <div class="options" value="type">All Types</div>
+                </div>
+            </div>
+            <div class="range">
+                <div class="defult">
+                    <p>Price range</p>
+                    <div id="qwwq">
+                        <span>|</span>
+                        <span>‹</span>
+                    </div>
+                </div>
+                <div class="options-sect position-absolute">
+                    <div class="options" value="zone">1000,000 LE</div>
+                    <div class="options" value="zone">2000,000 LE</div>
+                    <div class="options" value="zone">2300,000 LE</div>
+                    <div class="options" value="zone">2800,000 LE</div>
+                </div>
+            </div>
+            <span>
+                <i id="search" class="fa-solid fa-search"></i>
+            </span>
+        </div>
+    </section>
 
 
 
@@ -82,6 +150,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!-- JS -->
-    <script src="Js/main.js"></script>
+    <!-- Pre Load -->
+    <script src="Js/preLoad.js"></script>
+    <!-- Temp -->
+    <script src="Js/temp.js"></script>
+    <!-- Day / Night -->
+    <script src="Js/day-night.js"></script>
+    <!-- Search Drop Down-->
+    <script src="Js/searchDropDown.js"></script>
 
 </html>

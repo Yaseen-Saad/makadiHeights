@@ -11,4 +11,4 @@ setTimeout(() => {
   preLoad.style.top = "-100%";
   clearInterval[0];
   clearInterval(int);
-}, 000); //4500
+}, 4500); //4500

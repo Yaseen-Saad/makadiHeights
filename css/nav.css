@@ -20,7 +20,11 @@
   align-items: center;
   max-width: 40%;
   width: 400px;
+  color: var(--Mod);
   max-height: 100px;
+}
+.l-nav #search{
+font-size: 2rem;
 }
 nav {
   display: flex;
@@ -60,11 +64,13 @@ nav img {
 .search-nav {
   top: 0;
   right: -100%;
+  position: relative;
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
   color: var(--Mod);
   position: absolute;
-  background-color: var(--mainColor);
+  background-color: var(--modrevers);
 }
 .search-nav.active {
   right: 0;
@@ -114,7 +120,7 @@ nav img {
   padding-left: 20px;
 }
 .options-sect div.active {
-  background-color: #21436e4d;
+  background-color: #21436e;
   color: var(--Mod);
 }
 .search-nav .custom > span {
@@ -138,4 +144,20 @@ nav img {
 .search-nav .custom > div > .defult p {
   min-width: -webkit-fit-content;
   min-width: fit-content;
+}
+.search-nav .toggler {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 30px;
+}
+@media (min-width: 768px) {
+  .search-nav .custom {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+  }
+  .options-sect div {
+    z-index: 2000;
+  }
 }

@@ -1,13 +1,18 @@
 let timestatus = document.querySelector(".timestatus"),
   date = 0,
   timzone = 0,
-  sunise = 0;
+  sunise = 0,
+  root = document.querySelector(":root");
 
 function IsDay(curr, rise, set) {
   if (curr > rise && curr < set) {
     timestatus.children[0].src = "images/sunny.png";
+    root.style.setProperty("--Mod", "#233142");
+    root.style.setProperty("--modrevers", "#fff");
   } else {
     timestatus.children[0].src = "images/moon.png";
+    root.style.setProperty("--Mod", "#fff");
+    root.style.setProperty("--modrevers", "#233142");
   }
 }
 fetch(

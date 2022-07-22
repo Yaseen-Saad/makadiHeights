@@ -42,14 +42,11 @@ let search = document.querySelector(".custom > span:last-child");
 search.onclick = () => location.reload();
 let searchIcon = document.querySelector("#search");
 let searchBar = document.querySelector(".search-nav");
-let toggler = document.querySelector(".toggler");
+let close = document.querySelector(".search-nav  .toggler.active");
 console.log(searchIcon);
 searchIcon.onclick = () => {
   searchBar.classList.toggle("active");
-  toggler.classList.toggle("active");
-  let close = document.querySelector(".toggler.active");
   close.onclick = () => {
     searchBar.classList.toggle("active");
-    toggler.classList.toggle("active");
   };
 };

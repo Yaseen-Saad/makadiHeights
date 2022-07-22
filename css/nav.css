@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   overflow: clip;
+  cursor: pointer;
   height: 21px;
   font-weight: 700;
 }
@@ -18,13 +19,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 40%;
-  width: 400px;
+  max-width: 45%;
+  width: 450px;
   color: var(--Mod);
   max-height: 100px;
 }
-.l-nav #search{
-font-size: 2rem;
+.l-nav #search {
+  cursor: pointer;
+  font-size: 2rem;
 }
 nav {
   display: flex;
@@ -41,6 +43,7 @@ nav img {
   height: 40%;
 }
 .toggler {
+  cursor: pointer;
   display: flex;
   width: 40px;
   height: 50px;
@@ -86,6 +89,7 @@ nav img {
 }
 .search-nav .custom > div > .defult {
   width: 100%;
+  cursor: pointer;
   display: flex;
   height: 30px;
   border-bottom: 2px solid #7d789e;
@@ -100,6 +104,7 @@ nav img {
 }
 .options-sect {
   top: 30px;
+  cursor: pointer;
   width: 100%;
   display: none;
   flex-direction: column;
@@ -108,6 +113,7 @@ nav img {
 }
 .options-sect div {
   width: 100%;
+  cursor: pointer;
   height: 40px;
   background-color: var(--Mod);
   color: var(--modrevers);
@@ -120,13 +126,14 @@ nav img {
   padding-left: 20px;
 }
 .options-sect div.active {
-  background-color: #21436e;
+  background-color: var(--modrevers);
   color: var(--Mod);
 }
 .search-nav .custom > span {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   width: 50px;
   font-size: 1.7rem;
   height: 50px;
@@ -151,7 +158,7 @@ nav img {
   top: 30px;
   right: 30px;
 }
-@media (min-width: 768px) {
+@media (max-width: 1440px) {
   .search-nav .custom {
     flex-direction: column;
     justify-content: space-evenly;
@@ -159,5 +166,19 @@ nav img {
   }
   .options-sect div {
     z-index: 2000;
+  }
+}
+@media (max-width: 624px) {
+  .l-nav .buy-now,
+  .l-nav .temp {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .l-nav {
+    max-width: 30%;
+  }
+  .l-nav .timestatus {
+    display: none;
   }
 }

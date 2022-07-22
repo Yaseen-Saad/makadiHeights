@@ -6,7 +6,7 @@ int = setInterval(() => {
     paragraphs.children[i].style.transform = `translateY(-${tYA}%)`;
   }
   tYA += 100;
-}, 1500);
+}, 1500); //1500
 setTimeout(() => {
   preLoad.style.top = "-100%";
   clearInterval[0];

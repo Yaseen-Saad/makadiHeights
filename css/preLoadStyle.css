@@ -26,12 +26,39 @@
 .preLoad .texts p {
   margin: 0;
 }
-@media (max-width: 768px) and (min-width: 520px) {
+@media (max-width: 420px) {
+  .preLoad .texts {
+    font-size: 1.2rem;
+    height: 30px;
+  }
+  .preLoad .texts p {
+    height: 30px;
+  }
+}
+@media (min-width: 420px) {
+  .preLoad .texts {
+    font-size: 2rem;
+    height: 50px;
+  }
+  .preLoad .texts p {
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
   .preLoad .texts {
     font-size: 3rem;
     height: 70px;
   }
   .preLoad .texts p {
     height: 70px;
+  }
+}
+@media (min-width: 1444px) {
+  .preLoad .texts {
+    font-size: 5rem;
+    height: 100px;
+  }
+  .preLoad .texts p {
+    height: 100px;
   }
 }

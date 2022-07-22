@@ -1,1 +1,25 @@
-
+.landing {
+  width: 100vw;
+  height: 100vh;
+}
+.landing video {
+  height: 100%;
+  position: absolute;
+  transform: translateX(-25%);
+  z-index: -1;
+}
+.landing .video:after {
+  content: "";
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  display: inline;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(88, 104, 113, 0) 50%,
+    var(--mainColor) 85%
+  );
+}

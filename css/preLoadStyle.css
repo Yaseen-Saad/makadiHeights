@@ -8,24 +8,30 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--Mod);
+  background-color: var(--modrevers);
   flex-direction: column;
 }
 .preLoad img {
   width: 40%;
 }
-body {
-  color: var(--Mod);
-  background-color: #222;
-  min-height: 10000px;
-}
 .preLoad .texts {
+  color: var(--Mod);
   display: flex;
   flex-direction: column;
   overflow: clip;
+  text-align: center;
   height: 25px;
   font-weight: 700;
 }
 .preLoad .texts p {
   margin: 0;
+}
+@media (max-width: 768px) and (min-width: 520px) {
+  .preLoad .texts {
+    font-size: 3rem;
+    height: 70px;
+  }
+  .preLoad .texts p {
+    height: 70px;
+  }
 }

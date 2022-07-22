@@ -1,0 +1,141 @@
+.buy-now p {
+  margin: 0;
+}
+.buy-now p {
+  height: 18px;
+}
+.buy-now {
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  height: 21px;
+  font-weight: 700;
+}
+.buy-now:hover p {
+  transform: translateY(-114%);
+}
+.l-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40%;
+  width: 400px;
+  max-height: 100px;
+}
+nav {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  padding: 10px var(--padding);
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  height: 100px;
+  background-color: var(--modrevers);
+}
+nav img {
+  height: 40%;
+}
+.toggler {
+  display: flex;
+  width: 40px;
+  height: 50px;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.toggler.active span {
+  transform: translateX(100%);
+}
+.toggler.active span:first-child {
+  transform: translate(1px, 13px) rotate(-45deg);
+}
+.toggler.active span:last-child {
+  transform: translate(2px, -13px) rotate(45deg);
+}
+.toggler span {
+  display: inline-block;
+  height: 3%;
+  background-color: var(--Mod);
+}
+.search-nav {
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  color: var(--Mod);
+  position: absolute;
+  background-color: var(--mainColor);
+}
+.search-nav.active {
+  right: 0;
+}
+.search-nav .custom {
+  width: 70%;
+}
+.search-nav .custom > div {
+  flex-direction: column;
+  justify-content: center;
+  width: 190px;
+  position: relative;
+}
+.search-nav .custom > div > .defult {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  border-bottom: 2px solid #7d789e;
+  justify-content: space-between;
+}
+.search-nav .custom > div > .defult span:last-of-type {
+  transform: translateY(-10%) rotate(90deg);
+  font-size: 2.1rem;
+}
+.search-nav .custom > div > .defult span:last-of-type.active {
+  transform: rotate(270deg);
+}
+.options-sect {
+  top: 30px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: fit-content;
+}
+.options-sect div {
+  width: 100%;
+  height: 40px;
+  background-color: var(--Mod);
+  color: var(--modrevers);
+  padding: 10px;
+}
+.options-sect.active {
+  display: flex;
+}
+.options-sect div:hover {
+  padding-left: 20px;
+}
+.options-sect div.active {
+  background-color: #21436e4d;
+  color: var(--Mod);
+}
+.search-nav .custom > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  font-size: 1.7rem;
+  height: 50px;
+  border: 1px dashed var(--Mod);
+  border-radius: 50%;
+}
+.search-nav .custom > div > .defult div {
+  width: fill-available;
+  width: -webkit-fill-available;
+  max-width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search-nav .custom > div > .defult p {
+  min-width: -webkit-fit-content;
+  min-width: fit-content;
+}

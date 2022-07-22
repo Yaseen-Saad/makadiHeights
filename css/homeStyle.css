@@ -1,9 +1,9 @@
 .landing {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 .landing video {
-  height: 100%;
+  height: calc(100vh - 100px);
   position: absolute;
   transform: translateX(-25%);
   z-index: -1;
@@ -23,3 +23,4 @@
     var(--mainColor) 85%
   );
 }
+

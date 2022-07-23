@@ -32,12 +32,12 @@ nav {
   display: flex;
   position: relative;
   z-index: 100;
+  background-color: transparent;
   padding: 10px var(--padding);
   justify-content: space-between;
   width: 100vw;
   align-items: center;
   height: 100px;
-  background-color: var(--modrevers);
 }
 nav img {
   height: 40%;
@@ -66,13 +66,12 @@ nav img {
 }
 .search-nav {
   top: 0;
-  right: -100%;
-  position: relative;
+  right: -120%;
+  position: fixed;
   z-index: 1000;
   width: 100vw;
   height: 100vh;
   color: var(--Mod);
-  position: absolute;
   background-color: var(--modrevers);
 }
 .search-nav.active {
@@ -157,6 +156,15 @@ nav img {
   cursor: pointer;
   top: 30px;
   right: 30px;
+}
+nav.active {
+  background-color: #233142;
+}
+nav.active .l-nav {
+  color: #fff;
+}
+nav.active .l-nav .toggler span {
+  background-color: #fff;
 }
 @media (max-width: 1440px) {
   .search-nav .custom {

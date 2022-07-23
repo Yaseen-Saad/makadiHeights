@@ -2,14 +2,17 @@ let timestatus = document.querySelector(".timestatus"),
   date = 0,
   timzone = 0,
   sunise = 0,
-  root = document.querySelector(":root");
-
+  root = document.querySelector(":root"),
+  nav = document.querySelector("nav"),
+  lNav = document.querySelector("nav .l-nav");
 function IsDay(curr, rise, set) {
   if (curr > rise && curr < set) {
     timestatus.children[0].src = "images/sunny.png";
     root.style.setProperty("--Mod", "#233142");
+    nav.classList.add("active");
     root.style.setProperty("--modrevers", "#fff");
   } else {
+    nav.classList.remove("active");
     timestatus.children[0].src = "images/moon.png";
     root.style.setProperty("--Mod", "#fff");
     root.style.setProperty("--modrevers", "#233142");

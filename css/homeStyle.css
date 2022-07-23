@@ -1,8 +1,9 @@
 .landing {
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -100px;
+  margin-bottom: -100px;
 }
 .landing video {
   height: 100vh;
@@ -31,15 +32,9 @@
   );
 }
 .always-in-season {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  top: calc(100vh - 100px);
   color: #fff;
   background-color: var(--mainColor);
 }
-
 .main-swiper {
   display: block !important;
 }
@@ -136,9 +131,6 @@
   max-height: 100%;
   width: 100%;
 }
-.secoundry-side-swiper .item .cont{
-
-} 
 .owl-carousel {
   background-color: var(--mainColor);
 }
@@ -249,4 +241,138 @@
   .secoundry-side-swiper .item span {
     bottom: 20%;
   }
+}
+
+.owl-slider-findYourHome .cont.active .front {
+  transform: rotatey(180deg);
+}
+.owl-slider-findYourHome .cont.active .back {
+  transform: rotateY(0deg);
+}
+.owl-slider-findYourHome .cont {
+  color: #fff;
+  position: relative;
+  background-position: center;
+  width: 550px;
+  background-color: transparent;
+  height: 600px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  margin: auto;
+  perspective: 2000px;
+}
+.owl-slider-findYourHome .cont .face {
+  background-position: 20% center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  backface-visibility: hidden;
+  height: 100%;
+  box-shadow: 5px 5px 20px 0 rgb(45 41 51 / 40%);
+  width: 100%;
+}
+.owl-slider-findYourHome .cont .back {
+  transform: rotateY(-180deg);
+}
+.owl-slider-findYourHome .cont .back > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.owl-slider-findYourHome .cont .front .float p:first-child {
+  font-size: 2rem;
+}
+.owl-slider-findYourHome .cont .front .float p:last-child {
+  font-weight: 700;
+}
+.owl-slider-findYourHome .cont .face .float {
+  position: absolute;
+  opacity: 0.7;
+  top: 5%;
+  font-weight: 900;
+  z-index: 2;
+  left: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.owl-slider-findYourHome .cont .front a p {
+  margin: 0;
+  transition: 0.4s;
+  height: 100%;
+}
+.owl-slider-findYourHome .cont .front a:hover p {
+  transform: translateY(-114%);
+}
+.owl-slider-findYourHome .cont .front a {
+  bottom: 5%;
+  right: 5%;
+  z-index: 2;
+  width: 40%;
+  height: 8%;
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  cursor: pointer;
+  font-weight: 700;
+}
+.owl-slider-findYourHome .cont .face::after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(33, 67, 110, 0),
+    rgba(33, 67, 110, 0.681) 34.9%,
+    #21436e 93.75%
+  );
+}
+.owl-slider-findYourHome .cont .front::after {
+  z-index: 1;
+}
+.owl-slider-findYourHome .cont .back .float p {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+}
+.owl-slider-findYourHome .cont .back > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+.owl-slider-findYourHome .cont .back > div {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.owl-slider-findYourHome .cont .back > p {
+  bottom: 10%;
+  font-size: 1.4rem;
+  padding: 0 10%;
+  position: absolute;
+}
+.owl-slider-findYourHome .cont .back > div > div p:last-child {
+  font-size: 1.3rem;
+}
+.owl-slider-findYourHome .cont .back > div > div p:first-child {
+  font-weight: 700;
+  font-size: 4rem;
+}
+c.cont .back .float {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  top: 10%;
+  margin: auto;
 }

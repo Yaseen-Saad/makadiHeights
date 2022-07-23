@@ -4,7 +4,7 @@
   height: 50px;
   transition: 0.4s;
   color: var(--Mod);
-  z-index: 20000;
+  z-index: 500;
   position: fixed;
   display: flex;
   justify-content: center;

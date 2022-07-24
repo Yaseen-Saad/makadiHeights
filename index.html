@@ -362,6 +362,17 @@
             var owl = $('.owl-slider-findYourHome').owlCarousel({
                 items: 1,
                 loop: false,
+                autoWidth:true,
+                responsive: {
+                    600: {
+                        items: 2,
+                    },
+                    800: {
+                        items: 3,
+                    }, 1200: {
+                        items: 4,
+                    },
+                },
                 margin: 10,
                 nav: false,
                 smartSpeed: 1000,
